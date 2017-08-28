@@ -15,3 +15,17 @@ body {
 .section.is-small {
     padding: 1.5rem;
 }
+
+/* Keep the cards at the same height */
+.card {
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+}
+.card-footer {
+    margin-top: auto;
+}
+
+.card-header-title img {
+    margin-right: .5rem;
+}
