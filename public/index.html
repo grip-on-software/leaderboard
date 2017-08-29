@@ -32,7 +32,24 @@
         <div id="content" style="display: none">
             <div class="container">
                 <section class="section">
-                    <h2 id="project-name" class="title">Project</h2>
+                    <div class="columns">
+                        <div class="column is-9">
+                            <h2 id="project-name" class="title">Project</h2>
+                        </div>
+                        <div class="column is-3 has-text-right">
+                            Show score for:
+                            <form>
+                                <label>
+                                    Lead
+                                    <input type="radio" name="score" value="lead" checked>
+                                </label>
+                                <label>
+                                    Mean
+                                    <input type="radio" name="score" value="mean">
+                                </label>
+                            </form>
+                        </div>
+                    </div>
                     <div id="cards" class="columns is-multiline"></div>
                 </section>
             </div>
