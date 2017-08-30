@@ -29,3 +29,14 @@ body {
 .card-header-title img {
     margin-right: .5rem;
 }
+
+/* Color indications for score */
+.score-red {
+    color:  hsl(348, 100%, 41%) ;
+}
+.score-yellow {
+    color:  hsl(48, 100%, 40%) ;
+}
+.score-green {
+    color:  hsl(141, 71%, 28%) ;
+}
