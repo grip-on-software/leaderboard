@@ -35,19 +35,21 @@
                     <div class="columns">
                         <div class="column is-9">
                             <h2 id="project-name" class="title">Project</h2>
-                            <h3 class="subtitle">Total: <span id="total-score">0%</span></h3>
+                            <h3 class="subtitle">Average: <span id="total-score">0%</span></h3>
                         </div>
                         <div class="column is-3 has-text-right">
                             Show score for:
                             <form>
-                                <label>
-                                    Lead
-                                    <input type="radio" name="score" value="lead" checked>
-                                </label>
-                                <label>
-                                    Mean
-                                    <input type="radio" name="score" value="mean">
-                                </label>
+                                <div class="control has-text-right">
+                                    <label class="radio">
+                                        <input type="radio" name="score" value="lead" checked>                                        
+                                        Lead
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="score" value="mean">                                        
+                                        Mean
+                                    </label>
+                                </div>
                             </form>
                         </div>
                     </div>
