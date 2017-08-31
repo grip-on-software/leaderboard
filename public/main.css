@@ -31,6 +31,9 @@ body {
 }
 
 /* Color indications for score */
+.score {
+    font-weight: 600;
+}
 .score-red {
     color:  hsl(348, 100%, 41%) ;
 }
