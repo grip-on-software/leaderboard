@@ -55,11 +55,24 @@ body {
 	z-index: 0;
 }
 
-.drag-area .dragging {
+.drag-area .drag-card {
 	opacity: 1;
 	z-index: 1;
+	cursor: grab;
+}
+
+.drag-area .dragging {
+	cursor: grabbing;
+}
+
+.drag-area .over-droppable {
+	cursor: copy;
 }
 
 .drag-area .droppable {
 	opacity: 1;
+}
+
+.drag-area .clickable {
+	cursor: inherit;
 }
