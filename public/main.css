@@ -43,3 +43,19 @@ body {
 .score-green {
     color:  hsl(141, 71%, 28%) ;
 }
+
+/* Drag and drop */
+.drag-area .card {
+	opacity: .66;
+	transition: opacity .4s ease-in;
+	z-index: 0;
+}
+
+.drag-area .dragging {
+	opacity: 1;
+	z-index: 1;
+}
+
+.drag-area .droppable {
+	opacity: 1;
+}
