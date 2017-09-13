@@ -30,6 +30,10 @@ body {
     margin-right: .5rem;
 }
 
+.clickable {
+	cursor: pointer;
+}
+
 /* Color indications for score */
 .score {
     font-weight: 600;
