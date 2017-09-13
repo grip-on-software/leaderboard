@@ -26,6 +26,10 @@ body {
     margin-top: auto;
 }
 
+.card-header-icon {
+	padding: .75rem .5rem .75rem 0;
+}
+
 .card-header-title img {
     margin-right: .5rem;
 }
