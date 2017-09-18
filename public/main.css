@@ -30,8 +30,16 @@ body {
 	padding: .75rem .5rem .75rem 0;
 }
 
+.card-header-title {
+	overflow: scroll;
+}
+
 .card-header-title img {
     margin-right: .5rem;
+}
+
+.card-title, .card-normalize {
+	white-space: nowrap;
 }
 
 .clickable {
