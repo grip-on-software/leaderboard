@@ -42,6 +42,32 @@ body {
 	white-space: nowrap;
 }
 
+.distribution svg {
+	overflow: visible;
+  	font: 10px sans-serif;
+}
+
+.distribution line,
+.distribution rect,
+.distribution circle {
+  	fill: #fff;
+  	stroke: #000;
+  	stroke-width: 1.5px;
+}
+
+.distribution .highlight {
+	stroke: steelblue;
+}
+
+.distribution .center {
+  	stroke-dasharray: 3,3;
+}
+
+.distribution .outlier {
+  	fill: none;
+  	stroke: #ccc;
+}
+
 .clickable {
 	cursor: pointer;
 }
