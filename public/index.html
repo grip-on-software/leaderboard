@@ -32,25 +32,48 @@
         <div id="content" class="is-hidden">
             <div class="container">
                 <section class="section">
-                    <div class="columns">
-                        <div class="column is-9">
+                    <div class="columns is-vcentered">
+                        <div class="column is-6">
                             <h2 id="display-name" class="title">Features</h2>
                             <h3 class="subtitle">Average: <span id="total-score">0%</span></h3>
                         </div>
+						<div class="column is-3 has-text-right">
+							Order by:
+							<form>
+                                <div class="control has-text-right">
+                                    <label class="radio hide-project">
+                                        <input type="radio" name="order" value="project">
+                                        Project
+                                    </label>
+                                    <label class="radio hide-feature">
+                                        <input type="radio" name="order" value="feature">
+                                        Feature
+                                    </label>
+                                    <label class="radio hide-feature">
+                                        <input type="radio" name="order" value="group">
+                                        Group
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="order" value="score">
+                                        Score
+                                    </label>
+								</div>
+							</form>
+						</div>
                         <div class="column is-3 has-text-right">
                             Show score for:
                             <form>
                                 <div class="control has-text-right">
                                     <label class="radio">
-                                        <input type="radio" name="score" value="lead" checked>                                        
+                                        <input type="radio" name="score" value="lead" checked> 
                                         Lead
                                     </label>
                                     <label class="radio">
-                                        <input type="radio" name="score" value="mean">                                        
+                                        <input type="radio" name="score" value="mean">
                                         Mean
                                     </label>
                                     <label class="radio">
-                                        <input type="radio" name="score" value="rank">                                        
+                                        <input type="radio" name="score" value="rank">
                                         Rank
                                     </label>
                                 </div>
