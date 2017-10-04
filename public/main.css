@@ -68,7 +68,7 @@ body {
   	stroke: #ccc;
 }
 
-.clickable {
+.card .clickable {
 	cursor: pointer;
 }
 
