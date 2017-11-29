@@ -16,6 +16,10 @@ body {
     padding: 1.5rem;
 }
 
+.tabs ul {
+	flex-wrap: wrap;
+}
+
 /* Keep the cards at the same height */
 .card {
     display:flex;
