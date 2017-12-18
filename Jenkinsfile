@@ -39,7 +39,10 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'docker build -t $DOCKER_REGISTRY/gros-leaderboard .'
+                withCredentials([file(credentialsId: 'npm-auth', variable: 'NPM_CONFIG_USERCONFIG')]) {
+                    sh 'cp $NPM_CONFIG_USERCONFIG .npmrc'
+                    sh 'docker build -t $DOCKER_REGISTRY/gros-leaderboard .'
+                }
             }
         }
         stage('Push') {
