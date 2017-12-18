@@ -1,2 +1,12 @@
-FROM node:6-onbuild
+FROM node:6
 EXPOSE 8080
+
+ARG NODE_ENV
+ENV NODE_ENV $NODE_ENV
+ARG NPM_REGISTRY
+RUN npm config set @gros:registry $NPM_REGISTRY
+COPY package.json /usr/src/app/
+RUN npm install && npm cache clean --force
+COPY . /usr/src/app
+
+CMD ["npm", "start"]
