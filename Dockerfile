@@ -1,6 +1,9 @@
 FROM node:6
 EXPOSE 8080
 
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
 ARG NODE_ENV
 ENV NODE_ENV $NODE_ENV
 ARG NPM_REGISTRY
