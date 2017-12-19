@@ -14,6 +14,6 @@
     "d3": "^4.8.0",
     "javascript-natural-sort": "^0.7.1",
     "lodash": "^4.17.4",
-    "@gros/visualization-ui": "^0.0.2"
+    "@gros/visualization-ui": "^0.0.3"
   }
 }
