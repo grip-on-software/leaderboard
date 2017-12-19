@@ -4,8 +4,12 @@ mix.setPublicPath('public/')
     .js('lib/index.js', 'public/bundle.js')
     .browserSync({
         proxy: false,
-        server: 'public'
-    });;
+        server: 'public',
+        files: [
+            'public/**/*.js',
+            'public/**/*.css'
+        ]
+    });
 
 // Full API
 // mix.js(src, output);
