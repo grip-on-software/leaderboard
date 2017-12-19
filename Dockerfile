@@ -9,7 +9,7 @@ ENV NODE_ENV $NODE_ENV
 ARG NPM_REGISTRY
 RUN npm config set @gros:registry $NPM_REGISTRY
 COPY package.json /usr/src/app/
-RUN pnm install -g cross-env && npm install && npm cache clean --force
+RUN npm install -g cross-env && npm install && npm cache clean --force
 COPY . /usr/src/app
 
 CMD ["npm", "start"]
