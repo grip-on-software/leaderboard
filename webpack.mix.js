@@ -1,8 +1,8 @@
 let path = require('path');
 let mix = require('laravel-mix');
 
-mix.setResourceRoot(path.normalize('public/'))
-    .setPublicPath(path.normalize('public/'))
+Mix.paths.setRootPath(__dirname);
+mix.setPublicPath(path.resolve('public/'))
     .js('lib/index.js', 'public/bundle.js')
     .browserSync({
         proxy: false,
