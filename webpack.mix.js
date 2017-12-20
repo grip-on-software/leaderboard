@@ -1,6 +1,7 @@
+let path = require('path');
 let mix = require('laravel-mix');
 
-mix.setPublicPath('public/')
+mix.setPublicPath(path.normalize('public/'))
     .js('lib/index.js', 'public/bundle.js')
     .browserSync({
         proxy: false,
