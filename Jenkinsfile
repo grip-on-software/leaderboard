@@ -73,7 +73,7 @@ pipeline {
                 sh 'mv output/ public/data/'
                 sh 'rm -rf node_modules/'
                 sh 'ln -s /usr/src/app/node_modules .'
-                sh 'npm run production -- --context=$PWD'
+                sh 'npm run production'
             }
         }
         stage('Status') {
