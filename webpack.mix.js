@@ -3,14 +3,9 @@ let mix = require('laravel-mix');
 
 Mix.paths.setRootPath(__dirname);
 mix.setPublicPath('public/')
+    .setResourceRoot('')
     .js('lib/index.js', 'public/bundle.js')
-    .sass('node_modules/font-awesome/scss/font-awesome.scss', 'public/fa.css', {
-        data: '$fa-font-path: "fonts";'
-    })
-    .styles([
-        'node_modules/bulma/css/bulma.css',
-        'res/main.css'
-    ], 'public/main.css')
+    .sass('res/main.scss', 'public/main.css')
     .browserSync({
         proxy: false,
         server: 'public',
