@@ -1,0 +1,46 @@
+{
+    "nl": {
+        "language": "Nederlands",
+        "messages": {
+            "error-data": "Kon gegevens niet laden: %s",
+            "title-leaderboard": "Leaderboard",
+            "title-features": "Projectattributen",
+            "subtitle-score": "Gemiddeld: %s",
+            "order": "Ordenen op: %s",
+            "order-project": "Project",
+            "order-feature": "Attribuut",
+            "order-group": "Groep",
+            "order-score": "Score",
+            "score": "Score tonen voor: %s",
+            "score-project": "Project",
+            "score-lead": "Leider",
+            "score-mean": "Gemiddeld",
+            "score-rank": "Rang",
+            "card-swap-project": "Alle eigenschappen van het project %s tonen",
+            "card-swap-feature": "Alle projecten met de eigenschap %s tonen",
+            "source-link": "Naar de bron van deze eigenschap gaan"
+        }
+    },
+    "en": {
+        "language": "English",
+        "messages": {
+            "error-data": "Could not load data: %s",
+            "title-leaderboard": "Leaderboard",
+            "title-features": "Project Features",
+            "subtitle-score": "Average: %s",
+            "order": "Order by: %s",
+            "order-project": "Project",
+            "order-feature": "Feature",
+            "order-group": "Group",
+            "order-score": "Score",
+            "score": "Show score for: %s",
+            "score-project": "Project",
+            "score-lead": "Lead",
+            "score-mean": "Mean",
+            "score-rank": "Rank",
+            "card-swap-project": "Show all features of the project %s",
+            "card-swap-feature": "Show all projects with the feature %s",
+            "source-link": "Visit the source of this feature"
+        }
+    }
+}
