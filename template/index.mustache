@@ -5,16 +5,18 @@
     <title>Leaderboard</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="{{ visualization_url }}navbar.css">
 </head>
 
 <body>
+    <nav class="navbar is-link" role="navigation"
+    aria-label="main navigation" id="navbar">
+    </nav>
+
     <div id="header">
         <div class="container">
             <h1 class="title">Leaderboard</h1>
         </div>
-        <nav id="languages">
-        </nav>
     </div>
 
     <div class="container">
@@ -85,7 +87,8 @@
         </div>
     </div>
 
-    <script src="bundle.js"></script>
+    <script type="text/javascript" src="{{ visualization_url }}manifest.js"></script>
+    <script type="text/javascript" src="{{ visualization_url }}vendor.js"></script>
 </body>
 
 </html>
