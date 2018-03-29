@@ -1,3 +1,4 @@
 {
-    "visualization_url": "/"
+    "visualization_url": "/",
+    "path": "."
 }

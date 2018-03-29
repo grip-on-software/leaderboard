@@ -23,6 +23,10 @@ mix.setPublicPath('public/')
         ]
     })
     .webpackConfig({
+        output: {
+            path: path.resolve('public/'),
+            publicPath: configuration.path
+        },
         module: {
             rules: [ {
                 test: /\.mustache$/,
