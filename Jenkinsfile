@@ -98,7 +98,6 @@ pipeline {
             steps {
                 withCredentials([file(credentialsId: 'leaderboard-config', variable
 : 'LEADERBOARD_CONFIGURATION')]) {
-                    sh 'cp $LEADERBOARD_CONFIGURATION config.json'
                     sh 'rm -rf public/data/'
                     sh 'mkdir -p public/'
                     sh 'mv output/ public/data/'
