@@ -12,14 +12,14 @@
     "babel-loader": "^7.1.4",
     "babel-plugin-istanbul": "^4.1.6",
     "babel-preset-env": "^1.6.1",
-    "browser-sync": "^2.18.13",
+    "browser-sync": "^2.24.4",
     "browser-sync-webpack-plugin": "^1.2.0",
-    "laravel-mix": "^1.7.2",
+    "laravel-mix": "^2.1.11",
     "nyc": "^11.6.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
-    "@gros/visualization-ui": "^0.4.2",
+    "@gros/visualization-ui": "^0.4.5",
     "axios": "^0.16.1",
     "bulma": "^0.6.1",
     "cross-env": "^5.1.1",
