@@ -18,13 +18,13 @@
     "nyc": "^11.6.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
-    "@gros/visualization-ui": "^0.4.5",
-    "axios": "^0.16.1",
-    "bulma": "^0.6.1",
+    "@fortawesome/fontawesome-free": "^5.2.0",
+    "@gros/visualization-ui": "^0.4.7",
+    "axios": "^0.18.0",
+    "bulma": "^0.7.1",
     "bulma-tooltip": "^2.0.2",
     "cross-env": "^5.1.1",
-    "d3": "^4.12.0",
+    "d3": "^5.7.0",
     "html-webpack-plugin": "^3.1.0",
     "javascript-natural-sort": "^0.7.1",
     "lodash": "^4.17.4",
