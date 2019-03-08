@@ -41,7 +41,7 @@ mix.setPublicPath('public/')
     .webpackConfig({
         output: {
             path: path.resolve('public/'),
-            publicPath: configuration.path
+            publicPath: (configuration.path === "" ? "" : configuration.path + "/")
         },
         module: {
             rules: [ {
