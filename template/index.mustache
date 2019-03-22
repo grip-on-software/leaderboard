@@ -39,49 +39,45 @@
                                 <h2 id="display-name" class="title" data-message="title-features">Features</h2>
                                 <h3 class="subtitle" data-message="subtitle-score">Average: <span id="total-score">0%</span></h3>
                             </div>
-                            <div class="column is-3 has-text-right" data-message="order">
+                            <div class="column is-3 has-text-right">
                                 <form>
-                                    <fieldset role="radiogroup" aria-labelledby="order-legend">
+                                    <fieldset class="control has-text-right" role="radiogroup" aria-labelledby="order-legend">
                                         <legend id="order-legend" data-message="order">Order by:</legend>
-                                        <div class="control has-text-right">
-                                            <label class="radio hide-project">
-                                                <input type="radio" name="order" value="project">
-                                                <span data-message="order-project">Project</span>
-                                            </label>
-                                            <label class="radio hide-feature">
-                                                <input type="radio" name="order" value="feature">
-                                                <span data-message="order-feature">Feature</span>
-                                            </label>
-                                            <label class="radio hide-feature">
-                                                <input type="radio" name="order" value="group">
-                                                <span data-message="order-group">Group</span>
-                                            </label>
-                                            <label class="radio">
-                                                <input type="radio" name="order" value="score">
-                                                <span data-message="order-score">Score</span>
-                                            </label>
-                                        </div>
+                                        <label class="radio hide-project">
+                                            <input type="radio" name="order" value="project">
+                                            <span data-message="order-project">Project</span>
+                                        </label>
+                                        <label class="radio hide-feature">
+                                            <input type="radio" name="order" value="feature">
+                                            <span data-message="order-feature">Feature</span>
+                                        </label>
+                                        <label class="radio hide-feature">
+                                            <input type="radio" name="order" value="group">
+                                            <span data-message="order-group">Group</span>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="order" value="score">
+                                            <span data-message="order-score">Score</span>
+                                        </label>
                                     </fieldset>
                                 </form>
                             </div>
                             <div class="column is-3 has-text-right">
                                 <form>
-                                    <fieldset role="radiogroup" aria-labelledby="score-legend">
+                                    <fieldset class="control has-text-right" role="radiogroup" aria-labelledby="score-legend">
                                         <legend id="score-legend" data-message="score">Show score for:</legend>
-                                        <div class="control has-text-right">
-                                            <label class="radio">
-                                                <input type="radio" name="score" value="lead" checked>
-                                                <span data-message="score-lead">Lead</span>
-                                            </label>
-                                            <label class="radio">
-                                                <input type="radio" name="score" value="mean">
-                                                <span data-message="score-mean">Mean</span>
-                                            </label>
-                                            <label class="radio">
-                                                <input type="radio" name="score" value="rank">
-                                                <span data-message="score-rank">Rank</span>
-                                            </label>
-                                        </div>
+                                        <label class="radio">
+                                            <input type="radio" name="score" value="lead" checked>
+                                            <span data-message="score-lead">Lead</span>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="score" value="mean">
+                                            <span data-message="score-mean">Mean</span>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="score" value="rank">
+                                            <span data-message="score-rank">Rank</span>
+                                        </label>
                                     </fieldset>
                                 </form>
                             </div>
