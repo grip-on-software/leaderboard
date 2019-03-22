@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Leaderboard</title>
+    <title data-message="title-leaderboard">Leaderboard</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
     <link rel="stylesheet" href="{{ visualization_url }}navbar.css">
@@ -13,79 +13,85 @@
     aria-label="main navigation" id="navbar">
     </nav>
 
-    <div id="header">
-        <div class="container">
-            <h1 class="title" data-message="title-leaderboard">Leaderboard</h1>
-        </div>
-    </div>
-
-    <div class="container">
-        <section class="section is-small">
-            <!-- Project navigation -->
-            <div id="navigation" class="tabs is-toggle">
-            </div>
-
-            <div id="error-message" class="notification is-danger is-hidden"></div>
-        </section>
-    </div>
-
-    <div id="container">
-        <div id="content" class="is-hidden">
+    <main role="main">
+        <div id="header">
             <div class="container">
-                <section class="section">
-                    <div class="columns is-vcentered">
-                        <div class="column is-6">
-                            <h2 id="display-name" class="title" data-message="title-features">Features</h2>
-                            <h3 class="subtitle" data-message="subtitle-score">Average: <span id="total-score">0%</span></h3>
-                        </div>
-                        <div class="column is-3 has-text-right" data-message="order">
-                            Order by:
-                            <form>
-                                <div class="control has-text-right">
-                                    <label class="radio hide-project">
-                                        <input type="radio" name="order" value="project">
-                                        <span data-message="order-project">Project</span>
-                                    </label>
-                                    <label class="radio hide-feature">
-                                        <input type="radio" name="order" value="feature">
-                                        <span data-message="order-feature">Feature</span>
-                                    </label>
-                                    <label class="radio hide-feature">
-                                        <input type="radio" name="order" value="group">
-                                        <span data-message="order-group">Group</span>
-                                    </label>
-                                    <label class="radio">
-                                        <input type="radio" name="order" value="score">
-                                        <span data-message="order-score">Score</span>
-                                    </label>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="column is-3 has-text-right" data-message="score">
-                            Show score for:
-                            <form>
-                                <div class="control has-text-right">
-                                    <label class="radio">
-                                        <input type="radio" name="score" value="lead" checked> 
-                                        <span data-message="score-lead">Lead</span>
-                                    </label>
-                                    <label class="radio">
-                                        <input type="radio" name="score" value="mean">
-                                        <span data-message="score-mean">Mean</span>
-                                    </label>
-                                    <label class="radio">
-                                        <input type="radio" name="score" value="rank">
-                                        <span data-message="score-rank">Rank</span>
-                                    </label>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div id="cards" class="columns is-multiline"></div>
-                </section>
+                <h1 class="title" data-message="title-leaderboard">Leaderboard</h1>
             </div>
         </div>
-    </div>
+
+        <div class="container">
+            <section class="section is-small">
+                <!-- Project navigation -->
+                <div id="navigation" class="tabs is-toggle">
+                </div>
+
+                <div id="error-message" class="notification is-danger is-hidden"></div>
+            </section>
+        </div>
+
+        <div id="container">
+            <div id="content" class="is-hidden">
+                <div class="container">
+                    <section class="section">
+                        <div class="columns is-vcentered">
+                            <div class="column is-6">
+                                <h2 id="display-name" class="title" data-message="title-features">Features</h2>
+                                <h3 class="subtitle" data-message="subtitle-score">Average: <span id="total-score">0%</span></h3>
+                            </div>
+                            <div class="column is-3 has-text-right" data-message="order">
+                                <form>
+                                    <fieldset role="radiogroup" aria-labelledby="order-legend">
+                                        <legend id="order-legend" data-message="order">Order by:</legend>
+                                        <div class="control has-text-right">
+                                            <label class="radio hide-project">
+                                                <input type="radio" name="order" value="project">
+                                                <span data-message="order-project">Project</span>
+                                            </label>
+                                            <label class="radio hide-feature">
+                                                <input type="radio" name="order" value="feature">
+                                                <span data-message="order-feature">Feature</span>
+                                            </label>
+                                            <label class="radio hide-feature">
+                                                <input type="radio" name="order" value="group">
+                                                <span data-message="order-group">Group</span>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="order" value="score">
+                                                <span data-message="order-score">Score</span>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="column is-3 has-text-right">
+                                <form>
+                                    <fieldset role="radiogroup" aria-labelledby="score-legend">
+                                        <legend id="score-legend" data-message="score">Show score for:</legend>
+                                        <div class="control has-text-right">
+                                            <label class="radio">
+                                                <input type="radio" name="score" value="lead" checked>
+                                                <span data-message="score-lead">Lead</span>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="score" value="mean">
+                                                <span data-message="score-mean">Mean</span>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="score" value="rank">
+                                                <span data-message="score-rank">Rank</span>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="cards" class="columns is-multiline"></div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <script type="text/javascript" src="{{ visualization_url }}manifest.js"></script>
     <script type="text/javascript" src="{{ visualization_url }}vendor.js"></script>

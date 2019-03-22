@@ -18,7 +18,7 @@
             "score-rank": "Rang",
             "card-swap-project": "Alle eigenschappen van het project %s tonen",
             "card-swap-feature": "Alle projecten met de eigenschap %s tonen",
-            "source-link": "Naar de bron van deze eigenschap gaan"
+            "source-link": "Naar de bron van de eigenschap %s gaan"
         }
     },
     "en": {
@@ -40,7 +40,7 @@
             "score-rank": "Rank",
             "card-swap-project": "Show all features of the project %s",
             "card-swap-feature": "Show all projects with the feature %s",
-            "source-link": "Visit the source of this feature"
+            "source-link": "Visit the source of the feature %s"
         }
     }
 }
