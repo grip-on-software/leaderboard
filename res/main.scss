@@ -47,16 +47,16 @@ body {
 	padding: .25rem 0;
 }
 .card-header .score {
-	padding: .75rem .5rem .75rem .5rem;
+    cursor: default;
 }
 
 .card-header-title {
-	overflow: scroll;
+	overflow: auto;
 	white-space: nowrap;
 }
 
 .ellipsized-title {
-	overflow: hidden;
+	overflow: auto;
 	text-overflow: ellipsis;
 }
 
