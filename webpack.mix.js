@@ -1,4 +1,5 @@
 const fs = require('fs'),
+      path = require('path'),
       _ = require('lodash'),
       mix = require('laravel-mix'),
       HtmlWebpackPlugin = require('html-webpack-plugin');
