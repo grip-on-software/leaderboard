@@ -1,8 +1,9 @@
 /**
  * Entry point for the laravel-mix/webpack compilation of the leaderboard.
  *
- * Copyright (C) 2017-2020 ICTU
- * Copyright (C) 2017-2022 Leiden University
+ * Copyright 2017-2020 ICTU
+ * Copyright 2017-2022 Leiden University
+ * Copyright 2017-2023 Leon Helwerda
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

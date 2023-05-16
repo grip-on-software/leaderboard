@@ -2,7 +2,7 @@
   "name": "@gros/leaderboard",
   "version": "0.0.1",
   "description": "Project statistics as a leaderboard.",
-  "license": "Apache-2.0",
+  "license": "GPL-3.0-or-later",
   "author": "Leon Helwerda <l.s.helwerda@liacs.leidenuniv.nl>",
   "files": [
       "lib/*.js",
