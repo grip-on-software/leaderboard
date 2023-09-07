@@ -32,6 +32,19 @@ body {
 	flex-wrap: wrap;
 }
 
+#score-legend, #order-legend {
+    margin-right: 0.3em;
+}
+
+@include until($tablet) {
+    .radio[disabled] {
+        display: none;
+    }
+    .radio:first-of-type[disabled] + .radio {
+        margin-left: 0;
+    }
+}
+
 /* Keep the cards at the same height */
 .card {
     display:flex;
