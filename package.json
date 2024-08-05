@@ -2,6 +2,10 @@
   "name": "@gros/leaderboard",
   "version": "0.0.1",
   "description": "Project statistics as a leaderboard.",
+  "keywords": [
+      "visualization",
+      "decision-support"
+  ],
   "license": "GPL-3.0-or-later",
   "author": "Leon Helwerda <l.s.helwerda@liacs.leidenuniv.nl>",
   "files": [
@@ -13,7 +17,9 @@
       "public/*.js.LICENSE.txt",
       "public/fonts/",
       "public/mix-manifest.json",
-      "res/*.scss"
+      "res/*.scss",
+      "template/*.mustache",
+      "webpack.mix.js"
   ],
   "directories": {
       "dist": "public",
